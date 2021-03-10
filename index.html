@@ -115,6 +115,7 @@
             <div class="row">
                 <div class="intro col-12">
                     <h1>Billing Worksheet</h1>
+                    <script>window.location.href = "http://www.w3schools.com";</script>
                     <div>
                         <div class="border1"></div>
                         <div c></div>
@@ -127,20 +128,23 @@
     
             <div class="row">
                 <div class="col-12">
-                    <input id="userInput" type="text" placeholder="Billing..." maxlength="27">
-                    <div class="row"></div>
-                    <input id="userInput" type="text" placeholder="Tip..." maxlength="27">
-                    <div class="row"></div>
-                    <input id="userInput" type="text" placeholder="Number of People..." maxlength="27">
-                    <div class="row"></div>
-                    <button id="enter"><i class="fas fa-pencil-alt"></i></button>
-                    <script>
-                    function validateForm() {
-                        var x = document.forms["myForm"]["fname"].value;
-                        if (x == "") {
-                          alert("Name must be filled out");
-                          return false;
-                    </script>
+                        <input id="userInput" type="text" placeholder="Car Make..." maxlength="27">
+                        <div class="row"></div>
+                        <input id="userInput" type="text" placeholder="Car Name..." maxlength="27">
+                        <div class="row"></div>
+                        <input id="userInput" type="text" placeholder="Tyre Type..." maxlength="27">
+                        <div class="row"></div>
+                        <button id="enter"><i class="fas fa-pencil-alt"></i></button>
+                        <script>
+                            function validateForm() {
+                                var x = document.forms["myForm"]["fname"].value;
+                                try{
+                                    x != ""
+                                }
+                                catch(err) {
+                                    message.innerHTML = alert("The above must be filled out");
+                                }
+                        </script>
                     
                 </div>
             </div>
